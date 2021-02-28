@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<link href="./css/nav.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="eee27,个人博客,个人主页,ene27,916321714">
+<meta name="description" content="eee27,来自沈阳,可能会去上海.">
+<link href="http://ovniz7fmw.bkt.clouddn.com/ico.ico" rel="shortcut icon" type="./image/vnd.microsoft.icon">
+<title>eee27导航</title>
+</head>
+<body>
+<div id="container">
+<div id="top-bar">
+<p>自用主页导航</p>
+</div>
+<div id="logo">
+<a href="https://eee27.github.com" target="_blank" rel="external"><b>eee27</b></a>
+</div>
+<div id="search-box">
+<div id="search-bar">
+<form id="search" target="_blank" method="get" action="http://www.baidu.com/s?wd=">
+<select id="select">
+<option selected="selected" value="bd">百度</option>
+<option>谷歌</option>
+<option>必应</option>
+</select>
+<input type="search" placeholder="When you can't see it,you will be an idiot." title="输入搜索词" class="search-text" name="word" autofocus="autofocus">
+<button type="submit" class="search-button" onclick="OptionChoose()">搜索</button>
+</form>
+</div>
+</div>
+<div id="guide-box">
+<table>
+<tr>
+<td class="title">2</td>
+<td class="url"><a href="http://www.cnblogs.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/1.png">博客园</a></td>
+<td class="url"><a href="https://store.steampowered.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/2.png">Steam</a></td>
+<td class="url"><a href="http://www.smzdm.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/3.ico">张大妈</a></td>
+</tr>
+</table>
+<hr>
+<table>
+<tr>
+<td class="title">0</td>
+<td class="url"><a href="http://www.bilibili.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/4.png">B站</a></td>
+<td class="url"><a href="http://steamcn.com/forum.php" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/5.png">STCN</a></td>
+<td class="url"><a href="http://www.zhihu.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/6.png">知乎</a></td>
+</tr>
+</table>
+<hr>
+<table>
+<tr>
+<td class="title">1</td>
+<td class="url"><a href="http://www.jd.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/11.png">京东</a></td>
+<td class="url"><a href="http://www.taobao.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/12.png">淘宝</a></td>
+<td class="url"><a href="https://github.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/13.ico">Github</a></td>
+</tr>
+</table>
+<hr>
+<table>
+<tr>
+<td class="title">6</td>
+<td class="url"><a href="http://open.chrome.360.cn/extension_dev/overview.html" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/14.ico">Chrome</a></td>
+<td class="url"><a href="https://www.steamgifts.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/15.png">SG</a></td>
+<td class="url"><a href="https://mp.weixin.qq.com/" target="_blank"><img src="http://ovniz7fmw.bkt.clouddn.com/16.ico">公众平台</a></td>
+</tr>
+</table>
+</div>
+<div id="footer">
+<p>2017/09/04----v04</p>
+</div>
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+	$("td.url").click(function(event){
+	event.preventDefault();
+	window.open(this.firstChild.getAttribute('href'));
+//超链接由文本放大到表格
+});
+	$("td.url").mousemove(function(event){
+	this.style.cursor="pointer";
+});
+//修改表格鼠标指针
+</script>
+<script>
+	window.onload=(function(){
+	var WinWidth = window.screen.width; 
+	var WinHeight = window.screen.height;
+	var WinSize=document.getElementById("container");
+	WinSize.style.width=WinWidth;
+	WinSize.style.height=WinHeight;
+});
+//自适应窗口
+</script>
+<script>
+	function OptionChoose(){
+	event.preventDefault();
+	var list=document.getElementById("select").selectedIndex;
+	var choice=document.getElementsByTagName("option");
+	var search=document.getElementById("search");
+	if  (choice[list].index==0){
+	search.action="http://www.baidu.com/s?wd="
+}
+	else if (choice[list].index==1){
+	search.action="http://www.goole.com/search"
+}
+	else if(choice[list].index==2){
+	search.action="http://www.bing.com/s"
+}
+search.submit();
+}
+//失败的多搜索栏 google+bing需要开发者账号
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?234e82e5631f59fa8fed9007ffcb5c45";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+//baidu
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+html{
+	overflow: auto; 
+}
+body{
+	margin: 0;
+	font: 24px 微软雅黑,Arial, Helvetica, sans-serif;
+	color: #ccc;
+	min-width: 560px;
+	min-height: 560px;
+	text-align: center;
+}
+a{text-decoration: none;color: #eee;}
+hr{margin: 0; color: #aaa;height: 1px;}
+p{font-weight:bold;font-size:28px;color:#ddd;} 
+footer{
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+footer:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid black;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+footer:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: black;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
+li{
+	width:200px;
+}
+li:hover{
+	color: #000;
+	background: rgba(240,240,240,.3);
+}
+.bg-bar{
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 640px;
+	margin: 0;
+}
+.in-bar{
+	margin: 0 30%;
+}
+
+.bar-ul{
+	height: 640px;
+	width: 400px;	
+	float: right;
+	type: disc;
+	margin: 0;
+	text-align: left;
+	
+}
+.bar-ul p{font-size: 40px;}
+#container{
+	width: 100%;
+	height: 1500px;
+	background: #aaa;
+	margin: 0;
+}
+#bar1{
+	background-color: rgba(0,64,128,.4);
+	background-image: -moz-linear-gradient(top, #08f, #aaa); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #08f), color-stop(1, #aaa));/* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088ff', endColorstr='#aaaaaa');/*IE*/
+}
+#bar2{
+	background-color: rgba(208,255,96,.4);
+	background: -moz-radial-gradient(30px 30px, circle farthest-corner, #58ff00 0%, rgba(222, 255, 0, 0) 30%),
+	-moz-radial-gradient(50px 70px, circle farthest-corner, #F30 0%, rgba(255, 159, 34, 0) 60%),
+	-moz-radial-gradient(80px 10px, circle farthest-corner, #03F 0%, rgba(222, 255, 0, 0) 80%);
+	background:-webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)),
+	-webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)),
+	-webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
+#bar3{
+	background-color: rgba(0,255,96,.5);
+}
+#bar4{
+	background-color: rgba(0,48,255,.4);
+	background-image: -moz-linear-gradient(top, #5c9, #08f); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5c9), color-stop(1, #08f));/* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#55cc99', endColorstr='#0088ff');/*IE*/
+}
+#photo {
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	width: 150px;
+	height: 150px;
+	outline: #222 double thin;
+}
+#text-two{
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+#skill-bar{
+	margin: 0;
+	line-height:1.8;
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+	height: 640px;
+}
+#text-three{
+	margin: 0;
+}
+#website-title{
+	min-width: 300px; 
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-right: 200px;
+	font-size: 50px;
+	text-align: right;
+}
+#web-ul{
+	margin-left: 200px;
+}
+#web-ul li{
+	font-size:32px;
+}
+#text-four{
+	margin: 0;
+}
+#connect-title{
+	min-width: 300px; 
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-left: 200px;
+	font-size: 50px;
+	text-align: left;
+}
+#connect-buttonplace{
+	height: 200px;
+	width: 800px;
+	padding: 50px;
+	padding-right: 0;
+	float: right;
+}
+.talk-bubble p{
+	color: #333;
+	text-align: center;
+	vertical-align: center;
+}
+.talk-bubble {
+   width: 120px;
+   height: 80px;
+   background: #9cf;
+   position: relative;
+   margin: 50px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   /*##*/
+   float: right;
+}
+.talk-bubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #9cf;
+   border-bottom: 13px solid transparent;
+}
+.talk-bubble p:hover{
+	color: rgba(120,120,120,.8);
+}
+#website-place{
+	height: 300px;
+	width: 800px;
+	padding: 50px;
+	padding-left: 0;
+	float: left;
+}
+
